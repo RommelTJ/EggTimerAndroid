@@ -30,7 +30,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/timerSeekBar"
-            app:srcCompat="@drawable/egg" />
+            app:srcCompat="@drawable/egg"/>
 
     <TextView
             android:id="@+id/countdownTextView"
