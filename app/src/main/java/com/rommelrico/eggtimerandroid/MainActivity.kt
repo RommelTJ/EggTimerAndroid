@@ -71,7 +71,8 @@ class MainActivity : AppCompatActivity() {
             timerSeekBar?.isEnabled = false
             goButton?.text = getString(R.string.stop)
 
-            countDownTimer = object: CountDownTimer(((timerSeekBar?.progress?.times(1000) ?: 0) + 100).toLong(), 1000) {
+            val millisInFuture: Long = timerSeekBar?.progress?.toLong() ?: 0
+            countDownTimer = object: CountDownTimer(millisInFuture * 1000 + 100, 1000) {
                 /**
                  * Callback fired when the time is up.
                  */
@@ -89,7 +90,7 @@ class MainActivity : AppCompatActivity() {
                     val timeToUpdate: Int = (millisUntilFinished / 1000).toInt()
                     updateTimer(timeToUpdate)
                 }
-            }
+            }.start()
 
         }
     }
