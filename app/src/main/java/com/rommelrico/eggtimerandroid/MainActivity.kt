@@ -1,5 +1,6 @@
 package com.rommelrico.eggtimerandroid
 
+import android.media.MediaPlayer
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
@@ -75,7 +76,9 @@ class MainActivity : AppCompatActivity() {
                  * Callback fired when the time is up.
                  */
                 override fun onFinish() {
-                    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+                    val mPlayer = MediaPlayer.create(applicationContext, R.raw.airhorn)
+                    mPlayer.start()
+                    resetTimer()
                 }
 
                 /**
