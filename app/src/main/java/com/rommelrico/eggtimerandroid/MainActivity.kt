@@ -69,6 +69,24 @@ class MainActivity : AppCompatActivity() {
             counterIsActive = true
             timerSeekBar?.isEnabled = false
             goButton?.text = "STOP!"
+
+            countDownTimer = object: CountDownTimer(((timerSeekBar?.progress?.times(1000) ?: 0) + 100).toLong(), 1000) {
+                /**
+                 * Callback fired when the time is up.
+                 */
+                override fun onFinish() {
+                    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+                }
+
+                /**
+                 * Callback fired on regular interval.
+                 * @param millisUntilFinished The amount of time until finished.
+                 */
+                override fun onTick(millisUntilFinished: Long) {
+                    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+                }
+            }
+
         }
     }
 
