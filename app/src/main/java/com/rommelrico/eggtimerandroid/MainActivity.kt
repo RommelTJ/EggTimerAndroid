@@ -83,7 +83,8 @@ class MainActivity : AppCompatActivity() {
                  * @param millisUntilFinished The amount of time until finished.
                  */
                 override fun onTick(millisUntilFinished: Long) {
-                    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+                    val timeToUpdate: Int = (millisUntilFinished / 1000).toInt()
+                    updateTimer(timeToUpdate)
                 }
             }
 
