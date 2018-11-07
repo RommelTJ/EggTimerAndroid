@@ -63,7 +63,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun buttonClicked(view: View) {
-        // TODO.
+        if (counterIsActive) {
+            resetTimer()
+        } else {
+            // TODO
+        }
     }
 
     fun resetTimer() {
