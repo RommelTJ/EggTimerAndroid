@@ -67,7 +67,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun resetTimer() {
-        // TODO.
+        timerTextView?.text = "0:30"
+        timerSeekBar?.progress = 30
+        timerSeekBar?.isEnabled = true
+        countDownTimer?.cancel()
+        goButton?.text = "GO!"
+        counterIsActive = false
     }
 
     fun updateTimer(secondsLeft: Int) {
