@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
              * @param fromUser True if the progress change was initiated by the user.
              */
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+                updateTimer(progress)
             }
 
             /**
