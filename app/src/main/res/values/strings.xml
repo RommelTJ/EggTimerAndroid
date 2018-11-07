@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">EggTimerAndroid</string>
+    <string name="go">GO!</string>
 </resources>
