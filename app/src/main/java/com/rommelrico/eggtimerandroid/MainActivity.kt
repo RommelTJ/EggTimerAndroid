@@ -14,4 +14,8 @@ class MainActivity : AppCompatActivity() {
     fun buttonClicked(view: View) {
         // TODO.
     }
+
+    fun resetTimer() {
+        // TODO.
+    }
 }
