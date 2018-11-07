@@ -51,18 +51,14 @@ class MainActivity : AppCompatActivity() {
              * to disable advancing the seekbar.
              * @param seekBar The SeekBar in which the touch gesture began
              */
-            override fun onStartTrackingTouch(seekBar: SeekBar?) {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-            }
+            override fun onStartTrackingTouch(seekBar: SeekBar?) { }
 
             /**
              * Notification that the user has finished a touch gesture. Clients may want to use this
              * to re-enable advancing the seekbar.
              * @param seekBar The SeekBar in which the touch gesture began
              */
-            override fun onStopTrackingTouch(seekBar: SeekBar?) {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-            }
+            override fun onStopTrackingTouch(seekBar: SeekBar?) { }
         })
     }
 
