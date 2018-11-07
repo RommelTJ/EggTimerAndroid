@@ -66,7 +66,9 @@ class MainActivity : AppCompatActivity() {
         if (counterIsActive) {
             resetTimer()
         } else {
-            // TODO
+            counterIsActive = true
+            timerSeekBar?.isEnabled = false
+            goButton?.text = "STOP!"
         }
     }
 
