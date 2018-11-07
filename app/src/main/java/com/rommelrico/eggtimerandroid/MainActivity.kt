@@ -95,11 +95,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun resetTimer() {
-        timerTextView?.text = "0:30"
+        timerTextView?.text = getString(R.string.timerString)
         timerSeekBar?.progress = 30
         timerSeekBar?.isEnabled = true
         countDownTimer?.cancel()
-        goButton?.text = "GO!"
+        goButton?.text = getString(R.string.go)
         counterIsActive = false
     }
 
