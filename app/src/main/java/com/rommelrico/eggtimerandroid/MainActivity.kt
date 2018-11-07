@@ -24,6 +24,11 @@ class MainActivity : AppCompatActivity() {
         timerSeekBar = findViewById(R.id.timerSeekBar)
         timerTextView = findViewById(R.id.countdownTextView)
         goButton = findViewById(R.id.goButton)
+
+        // Setting values for the SeekBar.
+        timerSeekBar?.max = 600
+        timerSeekBar?.progress = 30
+
     }
 
     fun buttonClicked(view: View) {
