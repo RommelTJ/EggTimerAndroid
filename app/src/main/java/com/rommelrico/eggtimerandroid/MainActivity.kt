@@ -71,7 +71,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun updateTimer(secondsLeft: Int) {
-        // TODO.
+        val minutes = secondsLeft / 60
+        val seconds = secondsLeft - (minutes * 60)
+
+        var secondString = seconds.toString()
+        if (seconds <= 9) {
+            secondString = "0$secondString"
+        }
+
+        timerTextView?.text = "$minutes:$secondString"
     }
 
 }
