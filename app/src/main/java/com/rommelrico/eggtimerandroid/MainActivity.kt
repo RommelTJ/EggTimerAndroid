@@ -69,7 +69,7 @@ class MainActivity : AppCompatActivity() {
         } else {
             counterIsActive = true
             timerSeekBar?.isEnabled = false
-            goButton?.text = "STOP!"
+            goButton?.text = getString(R.string.stop)
 
             countDownTimer = object: CountDownTimer(((timerSeekBar?.progress?.times(1000) ?: 0) + 100).toLong(), 1000) {
                 /**
