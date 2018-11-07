@@ -18,4 +18,9 @@ class MainActivity : AppCompatActivity() {
     fun resetTimer() {
         // TODO.
     }
+
+    fun updateTimer(secondsLeft: Int) {
+        // TODO.
+    }
+    
 }
