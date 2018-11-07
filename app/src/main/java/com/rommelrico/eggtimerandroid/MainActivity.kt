@@ -19,6 +19,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        // Initializing the views.
+        timerSeekBar = findViewById(R.id.timerSeekBar)
+        timerTextView = findViewById(R.id.countdownTextView)
+        goButton = findViewById(R.id.goButton)
     }
 
     fun buttonClicked(view: View) {
